@@ -1,0 +1,185 @@
+Month,Year,Events,Fatalities,Quarter,Is_Fatal,Cumulative_Events,Cumulative_Fatalities,Events_Category,Fatalities_Category
+January,2010,53,17,1,Yes,53,17,High,Medium
+February,2010,8,2,1,Yes,61,19,Low,Low
+March,2010,34,0,1,No,95,19,High,No Fatalities
+April,2010,22,1,2,Yes,117,20,Medium,Low
+May,2010,2,0,2,No,119,20,Low,No Fatalities
+June,2010,4,3,2,Yes,123,23,Low,Low
+July,2010,5,1,3,Yes,128,24,Low,Low
+August,2010,2,1,3,Yes,130,25,Low,Low
+September,2010,0,0,3,No,130,25,No Events,No Fatalities
+October,2010,3,1,4,Yes,133,26,Low,Low
+November,2010,2,0,4,No,135,26,Low,No Fatalities
+December,2010,4,2,4,Yes,139,28,Low,Low
+January,2011,7,3,1,Yes,146,31,Low,Low
+February,2011,6,2,1,Yes,152,33,Low,Low
+March,2011,22,4,1,Yes,174,37,Medium,Low
+April,2011,3,1,2,Yes,177,38,Low,Low
+May,2011,4,0,2,No,181,38,Low,No Fatalities
+June,2011,4,0,2,No,185,38,Low,No Fatalities
+July,2011,6,1,3,Yes,191,39,Low,Low
+August,2011,7,2,3,Yes,198,41,Low,Low
+September,2011,5,3,3,Yes,203,44,Low,Low
+October,2011,8,6,4,Yes,211,50,Low,Medium
+November,2011,3,0,4,No,214,50,Low,No Fatalities
+December,2011,4,1,4,Yes,218,51,Low,Low
+January,2012,5,1,1,Yes,223,52,Low,Low
+February,2012,6,1,1,Yes,229,53,Low,Low
+March,2012,8,2,1,Yes,237,55,Low,Low
+April,2012,2,0,2,No,239,55,Low,No Fatalities
+May,2012,3,1,2,Yes,242,56,Low,Low
+June,2012,6,3,2,Yes,248,59,Low,Low
+July,2012,5,1,3,Yes,253,60,Low,Low
+August,2012,9,0,3,No,262,60,Low,No Fatalities
+September,2012,4,0,3,No,266,60,Low,No Fatalities
+October,2012,7,0,4,No,273,60,Low,No Fatalities
+November,2012,6,27,4,Yes,279,87,Low,High
+December,2012,2,0,4,No,281,87,Low,No Fatalities
+January,2013,5,3,1,Yes,286,90,Low,Low
+February,2013,12,3,1,Yes,298,93,Medium,Low
+March,2013,12,2,1,Yes,310,95,Medium,Low
+April,2013,3,0,2,No,313,95,Low,No Fatalities
+May,2013,10,0,2,No,323,95,Low,No Fatalities
+June,2013,10,2,2,Yes,333,97,Low,Low
+July,2013,4,0,3,No,337,97,Low,No Fatalities
+August,2013,16,0,3,No,353,97,Medium,No Fatalities
+September,2013,28,2,3,Yes,381,99,Medium,Low
+October,2013,8,0,4,No,389,99,Low,No Fatalities
+November,2013,2,1,4,Yes,391,100,Low,Low
+December,2013,4,1,4,Yes,395,101,Low,Low
+January,2014,1,0,1,No,396,101,Low,No Fatalities
+February,2014,3,0,1,No,399,101,Low,No Fatalities
+March,2014,5,1,1,Yes,404,102,Low,Low
+April,2014,3,3,2,Yes,407,105,Low,Low
+May,2014,3,1,2,Yes,410,106,Low,Low
+June,2014,2,1,2,Yes,412,107,Low,Low
+July,2014,1,0,3,No,413,107,Low,No Fatalities
+August,2014,0,0,3,No,413,107,No Events,No Fatalities
+September,2014,11,0,3,No,424,107,Medium,No Fatalities
+October,2014,3,0,4,No,427,107,Low,No Fatalities
+November,2014,5,0,4,No,432,107,Low,No Fatalities
+December,2014,11,0,4,No,443,107,Medium,No Fatalities
+January,2015,32,3,1,Yes,475,110,High,Low
+February,2015,2,0,1,No,477,110,Low,No Fatalities
+March,2015,2,0,1,No,479,110,Low,No Fatalities
+April,2015,0,0,2,No,479,110,No Events,No Fatalities
+May,2015,1,0,2,No,480,110,Low,No Fatalities
+June,2015,2,2,2,Yes,482,112,Low,Low
+July,2015,6,1,3,Yes,488,113,Low,Low
+August,2015,8,1,3,Yes,496,114,Low,Low
+September,2015,0,0,3,No,496,114,No Events,No Fatalities
+October,2015,1,0,4,No,497,114,Low,No Fatalities
+November,2015,1,2,4,Yes,498,116,Low,Low
+December,2015,1,0,4,No,499,116,Low,No Fatalities
+January,2016,4,1,1,Yes,503,117,Low,Low
+February,2016,1,1,1,Yes,504,118,Low,Low
+March,2016,0,0,1,No,504,118,No Events,No Fatalities
+April,2016,3,0,2,No,507,118,Low,No Fatalities
+May,2016,0,0,2,No,507,118,No Events,No Fatalities
+June,2016,1,0,2,No,508,118,Low,No Fatalities
+July,2016,1,0,3,No,509,118,Low,No Fatalities
+August,2016,0,0,3,No,509,118,No Events,No Fatalities
+September,2016,1,0,3,No,510,118,Low,No Fatalities
+October,2016,1,2,4,Yes,511,120,Low,Low
+November,2016,0,0,4,No,511,120,No Events,No Fatalities
+December,2016,2,0,4,No,513,120,Low,No Fatalities
+January,2017,2,0,1,No,515,120,Low,No Fatalities
+February,2017,2,0,1,No,517,120,Low,No Fatalities
+March,2017,2,0,1,No,519,120,Low,No Fatalities
+April,2017,1,0,2,No,520,120,Low,No Fatalities
+May,2017,12,0,2,No,532,120,Medium,No Fatalities
+June,2017,4,0,2,No,536,120,Low,No Fatalities
+July,2017,2,2,3,Yes,538,122,Low,Low
+August,2017,0,0,3,No,538,122,No Events,No Fatalities
+September,2017,2,0,3,No,540,122,Low,No Fatalities
+October,2017,0,0,4,No,540,122,No Events,No Fatalities
+November,2017,3,0,4,No,543,122,Low,No Fatalities
+December,2017,1,0,4,No,544,122,Low,No Fatalities
+January,2018,5,1,1,Yes,549,123,Low,Low
+February,2018,4,1,1,Yes,553,124,Low,Low
+March,2018,20,3,1,Yes,573,127,Medium,Low
+April,2018,2,0,2,No,575,127,Low,No Fatalities
+May,2018,1,1,2,Yes,576,128,Low,Low
+June,2018,6,2,2,Yes,582,130,Low,Low
+July,2018,5,1,3,Yes,587,131,Low,Low
+August,2018,4,1,3,Yes,591,132,Low,Low
+September,2018,8,4,3,Yes,599,136,Low,Low
+October,2018,10,3,4,Yes,609,139,Low,Low
+November,2018,21,3,4,Yes,630,142,Medium,Low
+December,2018,28,6,4,Yes,658,148,Medium,Medium
+January,2019,13,3,1,Yes,671,151,Medium,Low
+February,2019,4,2,1,Yes,675,153,Low,Low
+March,2019,4,0,1,No,679,153,Low,No Fatalities
+April,2019,19,280,2,Yes,698,433,Medium,High
+May,2019,26,6,2,Yes,724,439,Medium,Medium
+June,2019,24,4,2,Yes,748,443,Medium,Low
+July,2019,23,5,3,Yes,771,448,Medium,Low
+August,2019,26,3,3,Yes,797,451,Medium,Low
+September,2019,8,0,3,No,805,451,Low,No Fatalities
+October,2019,9,0,4,No,814,451,Low,No Fatalities
+November,2019,26,0,4,No,840,451,Medium,No Fatalities
+December,2019,21,1,4,Yes,861,452,Medium,Low
+January,2020,13,1,1,Yes,874,453,Medium,Low
+February,2020,12,7,1,Yes,886,460,Medium,Medium
+March,2020,2,0,1,No,888,460,Low,No Fatalities
+April,2020,7,6,2,Yes,895,466,Low,Medium
+May,2020,13,1,2,Yes,908,467,Medium,Low
+June,2020,3,2,2,Yes,911,469,Low,Low
+July,2020,13,1,3,Yes,924,470,Medium,Low
+August,2020,8,0,3,No,932,470,Low,No Fatalities
+September,2020,2,1,3,Yes,934,471,Low,Low
+October,2020,4,0,4,No,938,471,Low,No Fatalities
+November,2020,5,13,4,Yes,943,484,Low,Medium
+December,2020,2,0,4,No,945,484,Low,No Fatalities
+January,2021,4,1,1,Yes,949,485,Low,Low
+February,2021,5,0,1,No,954,485,Low,No Fatalities
+March,2021,3,0,1,No,957,485,Low,No Fatalities
+April,2021,8,1,2,Yes,965,486,Low,Low
+May,2021,2,0,2,No,967,486,Low,No Fatalities
+June,2021,7,2,2,Yes,974,488,Low,Low
+July,2021,1,0,3,No,975,488,Low,No Fatalities
+August,2021,1,0,3,No,976,488,Low,No Fatalities
+September,2021,5,0,3,No,981,488,Low,No Fatalities
+October,2021,4,1,4,Yes,985,489,Low,Low
+November,2021,2,0,4,No,987,489,Low,No Fatalities
+December,2021,2,0,4,No,989,489,Low,No Fatalities
+January,2022,3,0,1,No,992,489,Low,No Fatalities
+February,2022,0,0,1,No,992,489,No Events,No Fatalities
+March,2022,0,0,1,No,992,489,No Events,No Fatalities
+April,2022,1,0,2,No,993,489,Low,No Fatalities
+May,2022,7,3,2,Yes,1000,492,Low,Low
+June,2022,6,0,2,No,1006,492,Low,No Fatalities
+July,2022,6,1,3,Yes,1012,493,Low,Low
+August,2022,1,0,3,No,1013,493,Low,No Fatalities
+September,2022,0,0,3,No,1013,493,No Events,No Fatalities
+October,2022,0,0,4,No,1013,493,No Events,No Fatalities
+November,2022,3,1,4,Yes,1016,494,Low,Low
+December,2022,0,0,4,No,1016,494,No Events,No Fatalities
+January,2023,1,0,1,No,1017,494,Low,No Fatalities
+February,2023,1,1,1,Yes,1018,495,Low,Low
+March,2023,5,0,1,No,1023,495,Low,No Fatalities
+April,2023,2,0,2,No,1025,495,Low,No Fatalities
+May,2023,3,1,2,Yes,1028,496,Low,Low
+June,2023,5,0,2,No,1033,496,Low,No Fatalities
+July,2023,4,0,3,No,1037,496,Low,No Fatalities
+August,2023,2,0,3,No,1039,496,Low,No Fatalities
+September,2023,4,0,3,No,1043,496,Low,No Fatalities
+October,2023,3,0,4,No,1046,496,Low,No Fatalities
+November,2023,9,3,4,Yes,1055,499,Low,Low
+December,2023,10,2,4,Yes,1065,501,Low,Low
+January,2024,3,1,1,Yes,1068,502,Low,Low
+February,2024,3,1,1,Yes,1071,503,Low,Low
+March,2024,4,0,1,No,1075,503,Low,No Fatalities
+April,2024,3,0,2,No,1078,503,Low,No Fatalities
+May,2024,0,0,2,No,1078,503,No Events,No Fatalities
+June,2024,1,0,2,No,1079,503,Low,No Fatalities
+July,2024,5,1,3,Yes,1084,504,Low,Low
+August,2024,4,0,3,No,1088,504,Low,No Fatalities
+September,2024,12,2,3,Yes,1100,506,Medium,Low
+October,2024,7,0,4,No,1107,506,Low,No Fatalities
+November,2024,12,0,4,No,1119,506,Medium,No Fatalities
+December,2024,2,0,4,No,1121,506,Low,No Fatalities
+January,2025,6,0,1,No,1127,506,Low,No Fatalities
+February,2025,7,0,1,No,1134,506,Low,No Fatalities
+March,2025,2,0,1,No,1136,506,Low,No Fatalities
+April,2025,1,1,2,Yes,1137,507,Low,Low
