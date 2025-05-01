@@ -24,6 +24,7 @@ df = load_data()
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["About", "Dashboard"])
 
+#about page
 if page == "About":
     st.title("Sri Lanka Political Violence and Fatalities Analysis Dashboard")
     st.markdown("""
@@ -61,3 +62,45 @@ if page == "About":
 
     st.markdown("---")
     st.markdown("<div style='text-align:center; color:gray;'>Data Science Indiviual Coursework</div>", unsafe_allow_html=True)
+
+#dashboard page
+else:
+    st.sidebar.header("Filter Data")
+
+    min_year = int(df['Year'].min())
+    max_year = int(df['Year'].max())
+
+    year_range = st.sidebar.slider(
+        "Select Year Range", min_value=min_year, max_value=max_year,
+        value=(min_year, max_year)
+    )
+
+    selected_years = st.sidebar.multiselect(
+        "Select Specific Year(s)",
+        options=sorted(df['Year'].unique()),
+        default=sorted(df['Year'].unique())
+    )
+
+    quarters = st.sidebar.multiselect("Select Quarter(s)",
+        options=sorted(df['Quarter'].unique()),
+        default=sorted(df['Quarter'].unique())
+    )
+
+    event_categories = st.sidebar.multiselect("Event Categories",
+        options=sorted(df['Events_Category'].unique()),
+        default=sorted(df['Events_Category'].unique())
+    )
+
+    fatality_categories = st.sidebar.multiselect("Fatality Categories",
+        options=sorted(df['Fatalities_Category'].unique()),
+        default=sorted(df['Fatalities_Category'].unique())
+    )
+
+    filtered_df = df[
+        (df['Year'] >= year_range[0]) &
+        (df['Year'] <= year_range[1]) &
+        (df['Year'].isin(selected_years)) &
+        (df['Quarter'].isin(quarters)) &
+        (df['Events_Category'].isin(event_categories)) &
+        (df['Fatalities_Category'].isin(fatality_categories))
+    ]
