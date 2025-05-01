@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 import calendar
 
 st.set_page_config(
-    page_title="Sri Lanka Events and Fatalities Dashboard",
+    page_title="Sri Lanka Political Violence and Fatalities Analysis Dashboard",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -104,3 +104,39 @@ else:
         (df['Events_Category'].isin(event_categories)) &
         (df['Fatalities_Category'].isin(fatality_categories))
     ]
+
+    st.title("Sri Lanka Political Violence and Fatalities Analysis Dashboard")
+    st.markdown(f"Data from **{filtered_df['Date'].min().strftime('%B %Y')}** to **{filtered_df['Date'].max().strftime('%B %Y')}**")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Total Events", int(filtered_df['Events'].sum()))
+    col2.metric("Total Fatalities", int(filtered_df['Fatalities'].sum()))
+    col3.metric("Avg Events/Month", round(filtered_df['Events'].mean(), 1))
+    col4.metric("Avg Fatalities/Month", round(filtered_df['Fatalities'].mean(), 1))
+
+#tabs
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Trends", "Categories", "Calendar", "Deep Dive", "Advanced"])
+
+#trends tab 
+    with tab1:
+        st.subheader("Events and Fatalities Over Time")
+        fig = make_subplots(specs=[[{"secondary_y": True}]])
+        fig.add_trace(go.Scatter(x=filtered_df['Date'], y=filtered_df['Events'], name="Events", line=dict(color='blue')), secondary_y=False)
+        fig.add_trace(go.Scatter(x=filtered_df['Date'], y=filtered_df['Fatalities'], name="Fatalities", line=dict(color='red')), secondary_y=True)
+        fig.update_layout(
+            xaxis_title="Date",
+            yaxis_title="Events",
+            yaxis2_title="Fatalities",
+            hovermode="x unified",
+            height=500
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.subheader("Cumulative Events and Fatalities")
+        fig_cum = px.area(
+            filtered_df,
+            x='Date',
+            y=['Cumulative_Events', 'Cumulative_Fatalities'],
+            labels={'value': 'Count', 'variable': 'Metric'},
+        )
+        st.plotly_chart(fig_cum, use_container_width=True)
