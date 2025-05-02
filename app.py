@@ -34,13 +34,14 @@ if page == "About":
     The goal is to help users explore trends, severity, and distribution of political unrest across time.
 
     ### Features
-    - Interactive timeline visualizations of monthly and cumulative trends
-    - Dynamic filters by year, quarter, and event/fatality categories
-    - Calendar heatmap showing seasonal patterns
-    - Comparative analysis across quarters and years
-    - Identification of high-risk periods through alert system
-    - Advanced hierarchical visualization of event patterns
-    - Export capabilities for further analysis
+    - Time series and cumulative visualizations of events and fatalities
+    - Interactive filters by year range, specific years, quarter, and severity categories
+    - Calendar heatmap to identify monthly activity patterns
+    - Quarterly and categorical comparisons with bar and pie charts
+    - Outlier detection and identification of top months by events and fatalities
+    - Event-Fatality correlation and risk matrix
+    - Threshold-based alert system for high-risk periods
+    - Hierarchical view of events by Year > Quarter > Month
     """)
 
     #sample data
