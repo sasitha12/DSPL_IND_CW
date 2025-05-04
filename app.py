@@ -286,10 +286,24 @@ else:
         fig_bar_month = px.bar(
             avg_monthly,
             x='Month', y='Events',
-            title="Average Monthly Events",
             labels={'Events': 'Average Events'}
         )
         st.plotly_chart(fig_bar_month, use_container_width=True)
+   
+        st.subheader("Average Fatalities by Month")
+
+        avg_fatalities = filtered_df.groupby('Month')['Fatalities'].mean().reset_index()
+
+        month_order = list(calendar.month_name)[1:]
+        avg_fatalities['Month'] = pd.Categorical(avg_fatalities['Month'], categories=month_order, ordered=True)
+        avg_fatalities = avg_fatalities.sort_values('Month')
+
+        fig_bar_fatalities = px.bar(
+            avg_fatalities,
+            x='Month', y='Fatalities',
+            labels={'Fatalities': 'Average Fatalities'}
+        )
+        st.plotly_chart(fig_bar_fatalities, use_container_width=True)
 
         st.subheader("Top 5 Months by Events and Fatalities")
         col1, col2 = st.columns(2)
