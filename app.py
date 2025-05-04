@@ -192,10 +192,10 @@ else:
 
         st.subheader("Quarterly Breakdown")
         quarterly_df = filtered_df.groupby(['Year', 'Quarter']).agg({
-            'Events': 'sum',
+            'Events': ['sum', 'mean'],
             'Fatalities': ['sum', 'mean']
         }).reset_index()
-        quarterly_df.columns = ['Year', 'Quarter', 'Total_Events', 'Total_Fatalities', 'Avg_Fatalities']
+        quarterly_df.columns = ['Year', 'Quarter', 'Total_Events', 'Avg_Events', 'Total_Fatalities', 'Avg_Fatalities']
 
         fig_q1 = px.bar(
             quarterly_df, x='Year', y='Total_Events', color='Quarter', barmode='group',
@@ -204,10 +204,22 @@ else:
         st.plotly_chart(fig_q1, use_container_width=True)
 
         fig_q2 = px.bar(
+            quarterly_df, x='Year', y='Total_Fatalities', color='Quarter', barmode='group',
+            title="Total Fatalities by Quarter"
+        )
+        st.plotly_chart(fig_q2, use_container_width=True)
+
+        fig_q3 = px.bar(
+            quarterly_df, x='Year', y='Avg_Events', color='Quarter', barmode='group',
+            title="Average Events per Quarter"
+        )
+        st.plotly_chart(fig_q3, use_container_width=True)
+
+        fig_q4 = px.bar(
             quarterly_df, x='Year', y='Avg_Fatalities', color='Quarter', barmode='group',
             title="Average Fatalities per Quarter"
         )
-        st.plotly_chart(fig_q2, use_container_width=True)
+        st.plotly_chart(fig_q4, use_container_width=True)
 
 
 #calendar view tab
