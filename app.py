@@ -250,6 +250,20 @@ else:
         fig.update_yaxes(tickvals=list(range(12)), ticktext=month_abbr)
         st.plotly_chart(fig, use_container_width=True)
 
+
+        st.subheader("Monthly Fatalities Trend")
+        filtered_df['Month_Num'] = filtered_df['Month'].apply(lambda x: list(calendar.month_name).index(x))
+        monthly_trend = filtered_df.groupby(['Year', 'Month_Num']).agg({'Fatalities': 'sum'}).reset_index()
+        monthly_trend['Month'] = monthly_trend['Month_Num'].apply(lambda x: calendar.month_abbr[x])
+
+        monthly_trend.sort_values(by='Month_Num', inplace=True)
+
+        fig_mon_trend = px.line(
+            monthly_trend, x='Month', y='Fatalities', color='Year',
+            markers=True
+        )
+        st.plotly_chart(fig_mon_trend, use_container_width=True)
+
         st.subheader("Fatal vs Non-Fatal Months")
         fatal_counts = filtered_df['Is_Fatal'].value_counts().reset_index()
         fatal_counts.columns = ['Is_Fatal', 'Count']
