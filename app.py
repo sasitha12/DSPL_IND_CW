@@ -171,6 +171,26 @@ else:
         st.plotly_chart(fig_cum, use_container_width=True)
 
 
+        st.subheader("Event-to-Fatality Ratio by Year")
+
+        yearly_stats = filtered_df.groupby('Year').agg({
+            'Events': 'sum',
+            'Fatalities': 'sum'
+        }).reset_index()
+
+        yearly_stats['Fatalities_per_Event'] = yearly_stats['Fatalities'] / yearly_stats['Events']
+
+        fig_ratio = px.line(
+            yearly_stats,
+            x='Year',
+            y='Fatalities_per_Event',
+            markers=True,
+            labels={'Fatalities_per_Event': 'Fatalities per Event'},
+        )
+        st.plotly_chart(fig_ratio, use_container_width=True)
+
+
+
 #categories tab
     with tab2:
         st.subheader("Event and Fatality Categories")
