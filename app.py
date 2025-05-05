@@ -143,7 +143,7 @@ else:
     col4.metric("Avg Fatalities/Month", round(filtered_df['Fatalities'].mean(), 1))
 
 #tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Trends", "Categories", "Calendar", "Deep Dive", "Advanced"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Trends", "Categories", "Time of Year", "Deep Dive", "Advanced"])
 
 
 #trends tab 
@@ -242,7 +242,7 @@ else:
         st.plotly_chart(fig_q4, use_container_width=True)
 
 
-#calendar view tab
+#time of year tab
     with tab3:
         st.subheader("Monthly Events Heatmap")
 
